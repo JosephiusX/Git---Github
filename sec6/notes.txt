@@ -8,8 +8,13 @@ L44. Viewing branches
     the one thats active has * next to it
 
 L45. Creating Branches
+    q tp exit git log
     git branch <branch-name> : creates a branch
     this makes the branch but does not switch to the branch for me
     git switch <branch-name> : switch to a branch
 
     I can not see the message in this file that is on the first-branch
+
+    It does matter where I branch from
+
+    
