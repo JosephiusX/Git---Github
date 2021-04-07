@@ -17,4 +17,6 @@ L45. Creating Branches
 
     It does matter where I branch from
 
-    
+L47. Another Option: Git Checkout Vs. Git Switch
+    git checkout <branch-name> : acts just like switch
+
