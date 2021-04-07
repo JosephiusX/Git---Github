@@ -1,0 +1,15 @@
+L44. Every commit has a unique hash that corrisponds to the contents of the commit among other things
+
+L43. Head refers to the tip of a given branch
+    a brabcg is a reffrence to a commit
+
+L44. Viewing branches
+    git branch : tells me what branch im on
+    the one thats active has * next to it
+
+L45. Creating Branches
+    git branch <branch-name> : creates a branch
+    this makes the branch but does not switch to the branch for me
+    git switch <branch-name> : switch to a branch
+
+    this line is added in the first-branch
