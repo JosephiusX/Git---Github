@@ -22,3 +22,18 @@ L47. Another Option: Git Checkout Vs. Git Switch
 
 L48. Must add and commit before switching
     we could stash them but that topic is covered in a few sections
+    when switching branches, sometimes if I have unstaged changes, they will come with me.
+    other times if theyre in conflict I will get a message about commiting changes.
+
+L49. Deleting & Renaming Branches
+    -d of --delete : 
+    Ex: switch -c deleteMe to create a new branch
+    git branch -d deleteMe : cannot delete branch im currently Viewing
+    git switch main : to exit the branch
+    git branch -d deleteMe : if this dosent work it may not be merged
+    run it again with a uppercase -D
+
+    Rename a branch
+    git checkout recentish-music
+    
+    
