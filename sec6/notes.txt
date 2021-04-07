@@ -20,3 +20,5 @@ L45. Creating Branches
 L47. Another Option: Git Checkout Vs. Git Switch
     git checkout <branch-name> : acts just like switch
 
+L48. Must add and commit before switching
+    we could stash them but that topic is covered in a few sections
