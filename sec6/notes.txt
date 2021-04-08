@@ -37,6 +37,114 @@ L49. Deleting & Renaming Branches
     git checkout recentish-music : move to branch
     git branch -m 2000s : rename branch to 2000s
 
-L50. 50. How Git Stores HEAD & Branche
+L50. 50. How Git Stores HEAD & Branches
+    Head is a pointer that refers to the current "location" in my repository. It points to a particular branch reference.
+
+    So far, HEAD always points to the latest commit you made on the master branch, but soon we'll see that we can move around HEAD will change.
+
+
+L51. Branching Exercise
+    1. Make a new folder called Patronus
+        mkdir Patronus
+
+    2. Make git repo inside the folder (make sure im not in an existing repo)
+        cd Patronous
+        git init
+
+    3. Create a nnew file called patronus.txt (leave it empty for now)
+        touch patronous.txt
+
+    4. Add and commit the empty file, with the message 'add empty patronus file'
+        git add patronus.txt
+        git commit -m ' add empty patronus'
+
+    5. Immidietly make a new branch called harry and another branch called snape ( both based on the master branch )
+        (im currently on master)
+        git branch harry
+        git branch snape
+
+    6. Move to the harry branch using the "new" command to change branches.
+        git switch harry
+
+    7. In the patronus.txt file, add the following:
+    ```
+HARRY'S PATRONUS
+
+   /|       |\
+`__\\       //__'
+   ||      ||
+ \__`\     |'__/
+   `_\\   //_'
+   _.,:---;,._
+   \_:     :_/
+     |@. .@|
+     |     |
+     ,\.-./ \
+     ;;`-'   `---__________-----.-.
+     ;;;                         \_\
+     ';;;                         |
+      ;    |                      ;
+       \   \     \        |      /
+        \_, \    /        \     |\
+          |';|  |,,,,,,,,/ \    \ \_
+          |  |  |           \   /   |
+          \  \  |           |  / \  |
+           | || |           | |   | |
+           | || |           | |   | |
+           | || |           | |   | |
+           |_||_|           |_|   |_|
+          /_//_/           /_/   /_/
+    Use code . : to open the file in vscode
+
+    8. Add and commit the changes, with the commit message "add harry's stag patronus"
+        git add patronus.txt
+        git commit -m "add harry's stag patronus"
+
+    9. Move over to the snape branch using the "older" command to change branches.
+        git checkout snape
+        git log : to see that we have 2 commits on this branch
+
+    10. Put the following text in the patronous.txt file:
+
+    SNAPE'S PATRONUS
+                   .     _,
+                   |`\__/ /
+                   \  . .(
+                    | __T|
+                   /   |
+      _.---======='    |
+     //               {}
+    `|      ,   ,     {}
+     \      /___;    ,'
+      ) ,-;`    `\  //
+     | / (        ;||
+     ||`\\        |||
+     ||  \\       |||
+     )\   )\      )||
+     `"   `"      `""
+
+     11. Add and commit the changes on the `snape` branch with the commit message "add snape's doe patronus"
+        git add patronus.txt
+        git commit -m "add snape's doe patronus"
+
+     12. Next, create a new branch based upon the `snape` branch called `lily`
+        (im on snape)
+
+     13. Move to the `lily` branch
+        git switch -c lily
+
+     14. Edit the `patronus.txt` file so that it says `LILY'S PATRONUS` at the top instead of `SNAPE'S PATRONUS` (leave the doe ascii-art alone)
+
+     15. Add and commit the change with the message "add lily's doe patronus"
+        git add patronus.txt
+        git commit -m 'add lily's doe patronus'
+
+
+     16. Run a git command to list all branches (you should see 4)
+        git branch
+
+     17. **Bonus:** delete the `snape` branch
+        git branch -d snape
+
     
     
