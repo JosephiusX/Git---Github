@@ -35,3 +35,6 @@ their also may be changes in the same file with no conflict.
 
 git merge french
 
+
+s
+
